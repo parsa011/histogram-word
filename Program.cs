@@ -31,6 +31,7 @@ namespace test
                 Console.ForegroundColor = ConsoleColor.Red;
                 while (neededLoopTimes >= 0)
                 {
+                    //Console.WriteLine(neededLoopTimes + "-|");
                     for (var i = 0; i < names.Length; i++)
                     {
                         Console.Write(GiveMeSpace(10));
@@ -48,7 +49,7 @@ namespace test
                 {
                     for (var index = 0; index < names.Length; index++)
                     {
-                        Console.Write($"{GiveMeSpace(10) +  GiveMeSpace(neededLoopTimes) + names[index][neededLoopTimes].ToString() } ");
+                        Console.Write($"{GiveMeSpace(10) + GiveMeSpace(neededLoopTimes) + names[index][neededLoopTimes].ToString() } ");
                     }
                     neededLoopTimes++;
                     Console.WriteLine();
