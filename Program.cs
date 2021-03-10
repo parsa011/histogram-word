@@ -47,12 +47,14 @@ namespace test
                 neededLoopTimes = 0;
                 while (neededLoopTimes < biggest)
                 {
+                    Console.Write(GiveMeSpace(neededLoopTimes));
                     for (var index = 0; index < names.Length; index++)
                     {
-                        Console.Write($"{GiveMeSpace(10) + GiveMeSpace(neededLoopTimes) + names[index][neededLoopTimes].ToString() } ");
+                        Console.Write($"{GiveMeSpace(index == 0 ? 10 : 9)  + names[index][neededLoopTimes].ToString() } ");
                     }
                     neededLoopTimes++;
                     Console.WriteLine();
+                    
                 }
             }
             else
